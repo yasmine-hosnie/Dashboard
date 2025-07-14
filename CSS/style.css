@@ -325,8 +325,8 @@ header {
     margin-right: 40px;
   }
   .top .notification img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-right: 40px;
   }
@@ -345,10 +345,21 @@ header {
     align-items: center;
   }
   .bottom .left img {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     margin-inline: 20px;
+    margin-left: 6px;
+    margin-right: 26px;
+  }
+  .bottom .left .info span {
+    font-size: 12px;
+    margin-left: -18px;
+  }
+  .bottom .left .info p {
+    font-size: 10px;
+    margin-right: 40px;
+    margin-left: -18px;
   }
   .bottom ul {
     display: flex;
@@ -398,6 +409,13 @@ main .projects {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
 }
+@media (max-width: 620px) {
+  main .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
 main .projects .project {
   background-color: #ffffff;
   border-radius: 8px;
@@ -436,6 +454,14 @@ main .projects .project .icons i {
   padding: 10px 40px;
   border-radius: 8px;
 }
+
+@media (max-width: 620px) {
+  .announcements .boxes {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
 .announcements .boxes .box {
   margin-block: 30px;
   position: relative;
